@@ -91,6 +91,8 @@
     top: 15px;
 }
 
+
+
 .timeline-item:nth-child(odd) .timeline-date {
     right: -160px;
 }
@@ -284,7 +286,6 @@
         right: auto;
         left: 70px;
         top: -30px;
-        width: auto;
     }
     
     .learning-cards, .goals-container {

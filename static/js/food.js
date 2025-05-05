@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Food filtering functionality
     const filterButtons = document.querySelectorAll('.filter-btn');
     const foodItems = document.querySelectorAll('.food-item');
     
