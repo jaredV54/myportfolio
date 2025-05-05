@@ -112,6 +112,4 @@ document.addEventListener('DOMContentLoaded', function() {
     
     window.addEventListener('resize', updateVisibleItems);
     
-    carousel.addEventListener('mouseenter', stopAutoSlide);
-    carousel.addEventListener('mouseleave', startAutoSlide);
 });
