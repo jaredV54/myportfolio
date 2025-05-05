@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+
+{% block title %}Food Delicacies | My Portfolio{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/food.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <section class="food-header">
+        <h1>My Favorite Food Delicacies</h1>
+        <p>Exploring culinary traditions and flavors from around the world</p>
+    </section>
+    
+    <section class="food-gallery">
+        <div class="food-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="local">Local</button>
+            <button class="filter-btn" data-filter="international">International</button>
+            <button class="filter-btn" data-filter="desserts">Desserts</button>
+        </div>
+        
+        <div class="food-grid">
+            <div class="food-item local">
+                <div class="food-image">
+                    <img src="{{ url_for('static', filename='images/adobo.jpg') }}" alt="Adobo">
+                </div>
+                <div class="food-info">
+                    <h3>Adobo</h3>
+                    <p>A popular Filipino dish of meat marinated in vinegar, soy sauce, and spices.</p>
+                    <span class="food-tag">Local</span>
+                </div>
+            </div>
+            
+            <div class="food-item local">
+                <div class="food-image">
+                    <img src="{{ url_for('static', filename='images/sinigang.jpg') }}" alt="Sinigang">
+                </div>
+                <div class="food-info">
+                    <h3>Sinigang</h3>
+                    <p>A sour Filipino soup made with tamarind and various meats or seafood.</p>
+                    <span class="food-tag">Local</span>
+                </div>
+            </div>
+            
+            <div class="food-item international">
+                <div class="food-image">
+                    <img src="{{ url_for('static', filename='images/ramen.jpg') }}" alt="Ramen">
+                </div>
+                <div class="food-info">
+                    <h3>Ramen</h3>
+                    <p>Japanese noodle soup with rich broth, tender meat, and fresh toppings.</p>
+                    <span class="food-tag">International</span>
+                </div>
+            </div>
+            
+            <div class="food-item international">
+                <div class="food-image">
+                    <img src="{{ url_for('static', filename='images/pasta.jpg') }}" alt="Pasta">
+                </div>
+                <div class="food-info">
+                    <h3>Carbonara</h3>
+                    <p>Italian pasta dish with eggs, cheese, pancetta, and black pepper.</p>
+                    <span class="food-tag">International</span>
+                </div>
+            </div>
+            
+            <div class="food-item desserts">
+                <div class="food-image">
+                    <img src="{{ url_for('static', filename='images/halohalo.jpg') }}" alt="Halo-halo">
+                </div>
+                <div class="food-info">
+                    <h3>Halo-halo</h3>
+                    <p>Filipino dessert with mixed sweets, shaved ice, and evaporated milk.</p>
+                    <span class="food-tag">Desserts</span>
+                </div>
+            </div>
+            
+            <div class="food-item desserts">
+                <div class="food-image">
+                    <img src="{{ url_for('static', filename='images/tiramisu.jpg') }}" alt="Tiramisu">
+                </div>
+                <div class="food-info">
+                    <h3>Tiramisu</h3>
+                    <p>Italian coffee-flavored dessert with layers of ladyfingers and mascarpone.</p>
+                    <span class="food-tag">Desserts</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="favorite-recipe">
+        <h2>Featured Recipe: Homemade Adobo</h2>
+        <div class="recipe-container">
+            <div class="recipe-image">
+                <img src="{{ url_for('static', filename='images/adobo2.jpg') }}" alt="Adobo Recipe">
+            </div>
+            <div class="recipe-content">
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>2 lbs chicken or pork, cut into pieces</li>
+                    <li>1/3 cup soy sauce</li>
+                    <li>1/3 cup vinegar</li>
+                    <li>6 cloves garlic, crushed</li>
+                    <li>1 teaspoon whole peppercorns</li>
+                    <li>3 bay leaves</li>
+                    <li>1 tablespoon cooking oil</li>
+                    <li>1 cup water</li>
+                    <li>Salt to taste</li>
+                </ul>
+                <h3>Instructions:</h3>
+                <ol>
+                    <li>Combine meat, soy sauce, vinegar, and garlic in a large pot. Marinate for 30 minutes.</li>
+                    <li>Add water, peppercorns, and bay leaves. Bring to a boil.</li>
+                    <li>Reduce heat and simmer for 45 minutes until meat is tender.</li>
+                    <li>Heat oil in a separate pan and brown the cooked meat pieces.</li>
+                    <li>Pour in the sauce and simmer until reduced.</li>
+                    <li>Serve hot with steamed rice.</li>
+                </ol>
+                <a href="https://www.allrecipes.com/" class="btn" target="_blank">More Recipes</a>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/food.js') }}"></script>
+{% endblock %}

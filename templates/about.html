@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block title %}About Me | My Portfolio{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <div class="container">
+        <h1 class="reveal">About Me</h1>
+    </div>
+</div>
+
+<section class="about-section">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image reveal">
+                <img src="{{ url_for('static', filename='images/greek-2.jpg') }}" alt="Profile Picture">
+            </div>
+            <div class="about-content reveal">
+                <h2>Hi, I'm <span class="highlight">Angel Jared Dela Cruz</span></h2>
+                <p class="lead">A passionate developer and creative thinker with a love for technology and innovation.</p>
+                <p>I am currently pursuing my degree in Information Technology at MCC. My academic journey has equipped me with a strong foundation in software development, ui/ux design, and problem-solving techniques.</p>
+                <p>Beyond my technical skills, I value creativity, collaboration, and continuous learning. I believe in creating meaningful solutions that can make a positive impact on people's lives.</p>
+                
+                <div class="skills">
+                    <h3>My Skills</h3>
+                    <div class="skill-bars">
+                        <div class="skill">
+                            <span class="skill-name">Full stack Web Development</span>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">UI/UX Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="quote-section">
+    <div class="container">
+        <blockquote class="reveal">
+            <p>"If you're not willing to gamble on yourself, you'll spend your whole life working for someone who did"</p>
+            <cite>– Unknown</cite>
+        </blockquote>
+    </div>
+</section>
+
+<section class="values-section">
+    <div class="container">
+        <h2 class="section-title reveal">My Values</h2>
+        <div class="values-grid">
+            <div class="value-card reveal">
+                <div class="value-icon">🔍</div>
+                <h3>Curiosity</h3>
+                <p>I approach each day with a curious mind, always eager to learn and explore new ideas and technologies.</p>
+            </div>
+            <div class="value-card reveal">
+                <div class="value-icon">💡</div>
+                <h3>Innovation</h3>
+                <p>I strive to think outside the box and find creative solutions to complex problems.</p>
+            </div>
+            <div class="value-card reveal">
+                <div class="value-icon">🤝</div>
+                <h3>Collaboration</h3>
+                <p>I believe in the power of teamwork and value diverse perspectives in any project.</p>
+            </div>
+            <div class="value-card reveal">
+                <div class="value-icon">⚖️</div>
+                <h3>Integrity</h3>
+                <p>I am committed to honesty, transparency, and ethical behavior in all my endeavors.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

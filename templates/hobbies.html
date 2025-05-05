@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block title %}Hobbies | My Portfolio{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/hobbies.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <div class="container">
+        <h1 class="reveal">My Hobbies</h1>
+        <p class="lead reveal">What I'm passionate about outside of work</p>
+    </div>
+</div>
+
+<section class="hobbies-section">
+    <div class="container">
+        <div class="hobby-card reveal">
+            <div class="hobby-image">
+                <img src="{{ url_for('static', filename='images/hobby-2.jpg') }}" alt="Anime">
+            </div>
+            <div class="hobby-content">
+                <h2>Anime</h2>
+                <p>Anime has been a big part of my life ever since I watched my first series as a kid. It introduced me to vibrant storytelling, powerful emotions, and diverse cultures.</p>
+                <p>From action-packed adventures to heartfelt dramas, anime inspires my creativity and gives me a sense of connection with people around the world who share the same passion.</p>
+                <div class="hobby-gallery">
+                    <div class="gallery-item">
+                        <img src="{{ url_for('static', filename='images/frieren.jpg') }}" alt="Frieren">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ url_for('static', filename='images/kakegurui.jpg') }}" alt="Kakegurui">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ url_for('static', filename='images/deathnote.jpg') }}" alt="Death Note">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="hobby-card reveal">
+            <div class="hobby-content">
+                <h2>Online Games</h2>
+                <p>Online gaming is more than just a pastime for me it's a way to unwind, compete, and connect with friends across the globe. I’m especially drawn to immersive RPGs and action packed MOBAs that challenge both my reflexes and strategic thinking.</p>
+                <p>Games like <strong>Wuthering Waves</strong> and <strong>Mobile Legends: Bang Bang</strong> fuel my love for fantasy worlds, hero customization, and high stakes battles. Whether I'm exploring open-world storylines or coordinating in ranked matches, gaming has taught me teamwork, persistence, and adaptability.</p>
+            </div>
+            <div class="hobby-image">
+                <img src="{{ url_for('static', filename='images/hobby-1.jpg') }}" alt="Online Games">
+            </div>
+        </div>
+    
+        <div class="hobby-card reveal">
+            <div class="hobby-image">
+                <img src="{{ url_for('static', filename='images/hobby-5.jpg') }}" alt="Gym">
+            </div>
+            <div class="hobby-content">
+                <h2>Gym</h2>
+                <p>Going to the gym is a vital part of my routine. It helps me stay disciplined, healthy, and mentally strong. From lifting weights to doing cardio, I find every session empowering.</p>
+                <p>Some of my gym goals include:</p>
+                <ul class="gym-list">
+                    <li>Building muscle and strength</li>
+                    <li>Maintaining cardiovascular health</li>
+                    <li>Improving flexibility and mobility</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

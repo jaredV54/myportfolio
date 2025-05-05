@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% block title %}Future Profession | My Portfolio{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/profession.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <section class="profession-header">
+        <h1>My Future Profession</h1>
+        <p>My aspirations and goals for my future career</p>
+    </section>
+    
+    <section class="profession-content">
+        <div class="profession-card">
+            <div class="card-image">
+                <img src="{{ url_for('static', filename='images/softwareengineer.jpg') }}" alt="Future Career">
+            </div>
+            <div class="card-content">
+                <h2>My Dream Career</h2>
+                <p>I aspire to become a <strong>Software Developer</strong> with a passion for user interface design, animations, and creating visually engaging digital experiences. I’m drawn to the creative side of development—bringing ideas to life through smooth interactions, thoughtful layouts, and aesthetic details.</p>
+                <p>I'm particularly interested in developing AI solutions for healthcare, education, and environmental sustainability, where technology can make a meaningful difference.</p>
+            </div>
+        </div>
+        
+        <div class="skills-section">
+            <h2>Skills I'm Developing</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-item" data-progress="70">
+                        <span class="skill-name">Next.js</span>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-progress="40">
+                        <span class="skill-name">Framer motion</span>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-progress="35">
+                        <span class="skill-name">Figma</span>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-item" data-progress="80">
+                        <span class="skill-name">Problem Solving</span>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-progress="65">
+                        <span class="skill-name">Teamwork</span>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-progress="50">
+                        <span class="skill-name">Communication</span>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="education-section">
+            <h2>Educational Pathway</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Complete Bachelor's Degree</h3>
+                        <p class="timeline-date">In Progress</p>
+                        <p>Pursuing a Bachelor of Science in Information Technology (BSIT), focusing on web development, UI/UX design, and interactive media.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Master's Degree</h3>
+                        <p class="timeline-date">Future Goal</p>
+                        <p>Plan to pursue a Master’s in Digital Design or Human-Computer Interaction to deepen skills in user interface development and design systems.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Industry Certifications (freeCodeCamp)</h3>
+                        <p class="timeline-date">Ongoing</p>
+                        <p>Working towards certifications in technologies like Next.js, UI/UX design (e.g., Figma), and front-end frameworks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/profession.js') }}"></script>
+{% endblock %}

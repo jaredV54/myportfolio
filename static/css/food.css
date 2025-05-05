@@ -1,0 +1,180 @@
+/* Food Delicacies Page Styles */
+.food-header {
+    text-align: center;
+    padding: 60px 30px 40px;
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    margin-bottom: 40px;
+    margin-top: 120px !important;
+}
+
+.food-header h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.food-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Food Gallery Section */
+.food-gallery {
+    margin-bottom: 60px;
+}
+
+.food-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    background-color: var(--white);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 8px 16px;
+    margin: 0 8px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.food-item {
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.food-item:hover {
+    transform: translateY(-5px);
+}
+
+.food-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.food-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.food-item:hover .food-image img {
+    transform: scale(1.1);
+}
+
+.food-info {
+    padding: 20px;
+}
+
+.food-info h3 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.food-info p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.food-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+/* Recipe Section */
+.favorite-recipe {
+    margin-bottom: 60px;
+}
+
+.favorite-recipe h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-image {
+    flex: 1 1 300px;
+    min-height: 300px;
+}
+
+.recipe-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recipe-content {
+    flex: 1 1 300px;
+    padding: 30px;
+}
+
+.recipe-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.recipe-content h3:first-child {
+    margin-top: 0;
+}
+
+.recipe-content ul, .recipe-content ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.recipe-content li {
+    margin-bottom: 8px;
+}
+
+.recipe-content .btn {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .food-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .recipe-image, .recipe-content {
+        flex: 1 1 100%;
+    }
+    
+    .recipe-image {
+        min-height: 200px;
+    }
+}

@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+
+{% block title %}School Milestones | My Portfolio{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/milestones.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <section class="milestones-header">
+        <h1>My School Milestones</h1>
+        <p>Significant achievements and memorable moments from my academic journey</p>
+    </section>
+    
+    <section class="journey-timeline">
+        <h2>Academic Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">
+                    <span>2021</span>
+                </div>
+                <div class="timeline-content">
+                    <h3>Junior High School Graduation</h3>
+                    <p>Graduated with Academic Excellence Awardee (with Honors).</p>
+                    <div class="milestone-image">
+                        <img src="{{ url_for('static', filename='images/certif2.jpg') }}" alt="Junior High Graduation">
+                    </div>
+                    <div class="milestone-achievements">
+                        <span class="achievement-badge">With Honors</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">
+                    <span>2023</span>
+                </div>
+                <div class="timeline-content">
+                    <h3>Senior High School Graduation</h3>
+                    <p>Graduated with Academic Excellence Awardee (with Honors).</p>
+                    <div class="milestone-image">
+                        <img src="{{ url_for('static', filename='images/graduation.jpg') }}" alt="Senior High Graduation">
+                    </div>
+                    <div class="milestone-achievements">
+                        <span class="achievement-badge">With Honors</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">
+                    <span>2024</span>
+                </div>
+                <div class="timeline-content">
+                    <h3>First College Semester</h3>
+                    <p>Successfully completed first semester in Information technology with President's List (1st semester) and Chairman's List (2nd semester) recognition.</p>
+                    <div class="milestone-image">
+                        <img src="{{ url_for('static', filename='images/certif.jpg') }}" alt="College Dean List">
+                    </div>
+                    <div class="milestone-achievements">
+                        <span class="achievement-badge">President's List</span>
+                        <span class="achievement-badge">Chairman's List</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="key-learnings">
+        <h2>Key Learnings</h2>
+        <div class="learning-cards">
+            <div class="learning-card">
+                <div class="learning-icon">
+                    <i class="icon-persistence"></i>
+                </div>
+                <h3>Persistence</h3>
+                <p>Learning that challenges lead to growth and that perseverance is key to overcoming obstacles.</p>
+            </div>
+            
+            <div class="learning-card">
+                <div class="learning-icon">
+                    <i class="icon-teamwork"></i>
+                </div>
+                <h3>Teamwork</h3>
+                <p>Understanding the power of collaboration and diverse perspectives in achieving common goals.</p>
+            </div>
+            
+            <div class="learning-card">
+                <div class="learning-icon">
+                    <i class="icon-leadership"></i>
+                </div>
+                <h3>Leadership</h3>
+                <p>Developing the ability to inspire and guide others while taking responsibility for outcomes.</p>
+            </div>
+            
+            <div class="learning-card">
+                <div class="learning-icon">
+                    <i class="icon-creativity"></i>
+                </div>
+                <h3>Creativity</h3>
+                <p>Discovering that innovative thinking can solve complex problems in unexpected ways.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="future-goals">
+        <h2>Future Academic Goals</h2>
+        <div class="goals-container">
+            <div class="goal-item">
+                <h3>Bachelor's Degree</h3>
+                <p>Complete my undergraduate studies with honors and participate in research opportunities.</p>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%;"></div>
+                    </div>
+                    <span class="progress-text">40% Complete</span>
+                </div>
+            </div>
+            
+            <div class="goal-item">
+                <h3>Internship Experience in IT</h3>
+                <p>Secure internships with leading companies in my field to gain practical experience.</p>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%;"></div>
+                    </div>
+                    <span class="progress-text">60% Complete</span>
+                </div>
+            </div>
+            
+            <div class="goal-item">
+                <h3>Master's Program</h3>
+                <p>Pursue graduate studies in a specialized area to deepen my knowledge and expertise.</p>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 0%;"></div>
+                    </div>
+                    <span class="progress-text">Future Goal</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
