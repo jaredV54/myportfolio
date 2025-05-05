@@ -111,5 +111,4 @@ document.addEventListener('DOMContentLoaded', function() {
     updateVisibleItems();
     
     window.addEventListener('resize', updateVisibleItems);
-    
 });
