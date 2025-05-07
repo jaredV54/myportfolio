@@ -163,15 +163,13 @@ p {
     color: var(--primary-color);
 }
 
-/* Footer */
 footer {
-    background-color: var(--white);
+    background-color: var(--primary-color);
     color: var(--white);
     padding: 20px 0;
     text-align: center;
 }
 
-/* Responsive styles */
 @media (max-width: 1070px) {
     .nav-toggle {
         display: flex !important;

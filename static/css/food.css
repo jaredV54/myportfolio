@@ -23,13 +23,6 @@
     margin-bottom: 60px;
 }
 
-.food-filters {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-}
-
 .filter-btn {
     background-color: var(--white);
     border: 2px solid var(--primary-color);

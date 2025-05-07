@@ -1,7 +1,5 @@
 {% extends 'base.html' %}
 
-{% block title %}Home | My Portfolio{% endblock %}
-
 {% block extra_css %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
 {% endblock %}
@@ -19,89 +17,4 @@
         </div>
     </div>
 </div>
-
-<section class="featured">
-    <div class="container">
-        <h2 class="section-title reveal">Featured Sections</h2>
-        
-        <div class="carousel-container reveal">
-            <div class="carousel">
-                <div class="carousel-item">
-                    <a href="/about">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="{{ url_for('static', filename='images/about.jpg') }}" alt="About Me">
-                            </div>
-                            <div class="card-content">
-                                <h3>About Me</h3>
-                                <p>Learn more about who I am and what drives me forward.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <a href="/hobbies">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="{{ url_for('static', filename='images/hobby-1.jpg') }}" alt="Hobbies">
-                            </div>
-                            <div class="card-content">
-                                <h3>Hobbies</h3>
-                                <p>Discover what I'm passionate about outside of work.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <a href="/profession">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="{{ url_for('static', filename='images/hobby-4.jpg') }}" alt="Profession">
-                            </div>
-                            <div class="card-content">
-                                <h3>Future Profession</h3>
-                                <p>Explore my career aspirations and professional goals.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <a href="/food">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="{{ url_for('static', filename='images/fries.jpg') }}" alt="Food Delicacies">
-                            </div>
-                            <div class="card-content">
-                                <h3>Food Delicacies</h3>
-                                <p>A taste of my favorite culinary delights from around the world.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <a href="/milestones">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="{{ url_for('static', filename='images/certif.jpg') }}" alt="School Milestones">
-                            </div>
-                            <div class="card-content">
-                                <h3>School Milestones</h3>
-                                <p>Key achievements and memorable moments from my academic journey.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="carousel-nav">
-                <button class="carousel-prev">&#10094;</button>
-                <div class="carousel-dots"></div>
-                <button class="carousel-next">&#10095;</button>
-            </div>
-        </div>
-    </div>
-</section>
-{% endblock %}
-
-{% block extra_js %}
-<script src="{{ url_for('static', filename='js/carousel.js') }}"></script>
 {% endblock %}

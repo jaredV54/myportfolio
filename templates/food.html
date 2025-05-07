@@ -1,7 +1,5 @@
 {% extends 'base.html' %}
 
-{% block title %}Food Delicacies | My Portfolio{% endblock %}
-
 {% block extra_css %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/food.css') }}">
 {% endblock %}
@@ -14,13 +12,6 @@
     </section>
     
     <section class="food-gallery">
-        <div class="food-filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="local">Local</button>
-            <button class="filter-btn" data-filter="international">International</button>
-            <button class="filter-btn" data-filter="desserts">Desserts</button>
-        </div>
-        
         <div class="food-grid">
             <div class="food-item local">
                 <div class="food-image">
@@ -123,8 +114,4 @@
         </div>
     </section>
 </div>
-{% endblock %}
-
-{% block extra_js %}
-<script src="{{ url_for('static', filename='js/food.js') }}"></script>
 {% endblock %}
